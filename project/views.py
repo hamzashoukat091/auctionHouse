@@ -101,7 +101,7 @@ def goprofile(request):
             'buyer':byr,
             'seller':slr
         }
-        return render(request,'admin/admin.html',param)
+        return redirect('/admin/')
     param = {user: user}
     obj = Type.objects.get(user_id=user.id)
     if (obj.con == False):

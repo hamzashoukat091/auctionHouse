@@ -1,62 +1,77 @@
-
 <!DOCTYPE HTML>
 <html>
 {% load static %}
 <head>
-<title>BidBeaverss | Home</title>
+    <title>BidBeaverss | Home</title>
     <!--Fevicon-->
-<link rel="shortcut icon" href="{% static 'favicon.ico'%}">
-<link rel="manifest" href="{% static 'manifest.json'%}">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
+    <link rel="shortcut icon" href="{% static 'favicon.ico'%}">
+    <link rel="manifest" href="{% static 'manifest.json'%}">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <!---->
-<link href="{% static 'web/css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all">
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="{%static 'web/js/jquery-1.11.0.min.js' %}"></script>
-<!-- Custom Theme files -->
-<link href="{%static 'web/css/style.css' %}" rel="stylesheet" type="text/css" media="all"/>
-<link rel="stylesheet" href="{%static 'web/css/flexslider.css' %}" type="text/css" media="screen" />
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
-<!-- Custom Theme files -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="{% static 'web/css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="{%static 'web/js/jquery-1.11.0.min.js' %}"></script>
+    <!-- Custom Theme files -->
+    <link href="{%static 'web/css/style.css' %}" rel="stylesheet" type="text/css" media="all"/>
+    <link rel="stylesheet" href="{%static 'web/css/flexslider.css' %}" type="text/css" media="screen"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Custom Theme files -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.js"></script>
     <link rel="stylesheet" type="text/css" href="/css/result-light.css">
 
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
 
 
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);function hideURLbar(){ window.scrollTo(0,1); }> </script>
-<!-- start-smoth-scrolling -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script type="text/javascript" src="{%static 'web/js/move-top.js' %}"></script>
-<script type="text/javascript" src="{%static 'web/js/easing.js' %}"></script>
-	<script type="text/javascript">
+    <script type="application/x-javascript">
+         addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);function hideURLbar(){ window.scrollTo(0,1); }>
+
+
+    </script>
+    <!-- start-smoth-scrolling -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="{%static 'web/js/move-top.js' %}"></script>
+    <script type="text/javascript" src="{%static 'web/js/easing.js' %}"></script>
+    <script type="text/javascript">
 			jQuery(document).ready(function($) {
 				$(".scroll").click(function(event){		
 					event.preventDefault();
 					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 				});
 			});
-	</script>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
 
-<!--Icons Library-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+
+    </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+
+    <!--Icons Library-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+          integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
 
-<!--Icons Library-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <!--Icons Library-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+          integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
     <style>
     .asteriskField{
         display: none;
@@ -162,8 +177,12 @@
     margin-left: 15px; }
   .card-body {
     padding: 15px; }}
-</style>
-</head><style>
+
+
+
+    </style>
+</head>
+<style>
 .bidbox{
 					 background-color: #1F2C45;
                     color: #fff    ; }
@@ -183,81 +202,93 @@ h1{
   text-shadow: 0px 2px 0px rgba(0, 0, 0, 1);
 }
 
+
+
+
 </style>
 
 <body>
 <!-- //end-smoth-scrolling -->
 <!--header start here-->
 <div class="header">
-	<div class="container">
-		<div class="header-main">
-			<div  class="logo ">
-				<a href=""> <img src="{%static 'images/log0_2.png' %}" alt="" title=""> <b></b>BidBeavers</a>
+    <div class="container">
+        <div class="header-main">
+            <div class="logo ">
+                <a href=""> <img src="{%static 'images/log0_2.png' %}" alt="" title=""> <b></b>BidBeavers</a>
                 <!--<p style="color:#fff; font-size: 160%">Bid Beavers </p>-->
-			</div>
-			<div class="head-right">
-			  <div class="top-nav">
-				<!--<span class="menu"> <img src="{%static 'web/images/icon.png' %}" alt=""/></span>-->
-				<ul class="res">
-					<li><a class="active" href="/">Home</a></li>
+            </div>
+            <div class="head-right">
+                <div class="top-nav">
+                    <!--<span class="menu"> <img src="{%static 'web/images/icon.png' %}" alt=""/></span>-->
+                    <ul class="res">
+                        <li><a class="active" href="/">Home</a></li>
 
-                    <li ><a href="/goprofile/">Dashboard</a></li>
-					<li><a href="contact/">Contact</a></li>
+                        <li><a href="/goprofile/">Dashboard</a></li>
+                        <li><a href="contact/">Contact</a></li>
 
-					 {% if request.user.is_authenticated %}
+                        {% if request.user.is_authenticated %}
 
-    <li class="dropdown"><a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Open Profile Menu"><i class="fa fa-user fa-lg"></i></a>
-          <ul class="dropdown-menu settings-menu dropdown-menu-right">
-            <!--<li><a class="dropdown-item" href="{% url 'password_change' %}"><i class="fa fa-key fa-lg"></i> Change <br>  Passoword</a></li>-->
-              <li><a class="dropdown-item" ><i class="fa fa-user-circle-o"></i> {{ user.username }} </a></li>
-              <li><a class="dropdown-item" href="{% url 'logout' %}"><i class="fa fa-sign-out"></i> Logout </a></li>
-          </ul>
-        </li>
-                     {% else %}
-					<li><a href="/accounts/login/"><i class="fa fa-sign-in fa-lg"></i> Login</a></li>
-					{% endif %}<div class="btn-group">
-    <	</ul>
-				<!-- script-for-menu -->
-							 <script>
+                        <li class="dropdown"><a class="app-nav__item" href="#" data-toggle="dropdown"
+                                                aria-label="Open Profile Menu"><i class="fa fa-user fa-lg"></i></a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="background: #252e38">
+                                <a class="dropdown-item" href="#"><i class="fa fa-user-circle-o"></i> {{ user.username }}</a>
+                                <a class="dropdown-item" href="#"><i class="fa fa-sign-out"></i> Logout</a>
+                            </div>
+                        </li>
+                        {% else %}
+                        <li><a href="/accounts/login/"><i class="fa fa-sign-in fa-lg"></i> Login</a></li>
+                        {% endif %}
+                        <div class="btn-group">
+                            <
+                    </ul>
+                    <!-- script-for-menu -->
+                    <script>
 							   $( "span.menu" ).click(function() {
 								 $( "ul.res" ).slideToggle( 300, function() {
 								 // Animation complete.
 								  });
 								 });
-							</script>
-			<!-- /script-for-menu -->
-			 </div>
-		    
-			<div class="social">
-				<ul >
-					<li><a class="fa" href="https://www.facebook.com/ariz.asif.5"> </a></li>
-					<li><a class="tw" href="#"> </a></li>
-					<li><a class="p" href="#"> </a></li>
-				</ul>
-				</div>
+
+
+
+                    </script>
+                    <!-- /script-for-menu -->
+                </div>
+
+                <!--                <div class="social">-->
+                <!--                    <ul>-->
+                <!--                        <li><a class="fa" href="https://www.facebook.com/ariz.asif.5"> </a></li>-->
+                <!--                        <li><a class="tw" href="#"> </a></li>-->
+                <!--                        <li><a class="p" href="#"> </a></li>-->
+                <!--                    </ul>-->
+                <!--                </div>-->
 
                 <div class="search-box">
-				<div id="sb-search" class="sb-search">
-					<form action="/search/" method="get" enctype="multipart/form-data">
-                        {% csrf_token %}
-						<input class="sb-search-input"type="search" placeholder="Enter Seach Keywords" name="search" id="search">
-						<input class="sb-search-submit" type="submit">
-						<span class="sb-icon-search"> </span>
-					</form>
-			   </div>
-			</div>
-			   <!-- search-scripts -->
-					<script src="{%static 'web/js/classie.js' %}"></script>
-					<script src="{%static 'web/js/uisearch.js' %}"></script>
-						<script>
+                    <div id="sb-search" class="sb-search">
+                        <form action="/search/" method="get" enctype="multipart/form-data">
+                            {% csrf_token %}
+                            <input class="sb-search-input" type="search" placeholder="Enter Seach Keywords"
+                                   name="search" id="search">
+                            <input class="sb-search-submit" type="submit">
+                            <span class="sb-icon-search"> </span>
+                        </form>
+                    </div>
+                </div>
+                <!-- search-scripts -->
+                <script src="{%static 'web/js/classie.js' %}"></script>
+                <script src="{%static 'web/js/uisearch.js' %}"></script>
+                <script>
 							new UISearch( document.getElementById( 'sb-search' ) );
-						</script>
-			  <!-- //search-scripts -->
-		</div>
-		
-		<div class="clearfix"> </div>
-		</div>
-	</div>
+
+
+
+                </script>
+                <!-- //search-scripts -->
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+    </div>
 </div>
 <!--header end here-->
 
@@ -273,77 +304,84 @@ h1{
         nav:true,
       });
     });
-  </script>
 
-<div class="banner" style="background-image: url(data:image/jpeg;base64,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)">
+
+
+</script>
+
+<div class="banner"
+     style="background-image: url('{%static 'web/images/background7.jpeg' %}')">
     <!--
 <div  class="banner-strip bg-light text-dark" >
 </div>-->
     <nav aria-label="breadcrumb">
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="">Home /</a></li>
-      <!--
-    <li class="breadcrumb-item"><a href="#">Library</a></li>
-    <li class="breadcrumb-item active" aria-current="page">Data</li>-->
-  </ol>
-</nav>
-	<div class="container">
-		<div class="banner-main">
-			<ul class="rslides" id="slider">
-	        <li>
-	  			<h3>BidBeavers-Online Auction House</h3>
-                <p>Find Your needs and Bid according to your choice.</p>
-                <p>Negotiate With interested Sellers.</p>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="">Home /</a></li>
+            <!--
+          <li class="breadcrumb-item"><a href="#">Library</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Data</li>-->
+        </ol>
+    </nav>
+    <div class="container">
+        <div class="banner-main">
+            <ul class="rslides" id="slider">
+                <li>
+                    <h3>BidBeavers-Online Auction House</h3>
+                    <p>Find Your needs and Bid according to your choice.</p>
+                    <p>Negotiate With interested Sellers.</p>
 
-				<div class="bann-btn">
-					  <a href="#" class="hvr-shutter-out-horizontal">See More</a>
-               </div>
-	        </li>
-	        <!--Next Strip-->
+                    <div class="bann-btn">
+                        <a href="#" class="hvr-shutter-out-horizontal">See More</a>
+                    </div>
+                </li>
+                <!--Next Strip-->
 
                 <!--next Strip-->
-                                <li>
-						<h3>BidBeavers-Online Auction House</h3>
-						<p>In Case Of Any Query | Feel free to Ask Anything </p>
-                        <div class="bann-btn">
-					  <a href="/contact/" class="hvr-shutter-out-horizontal">Contact US</a>
-               </div>
-	        </li>
-	      </ul></div>
-	</div>
+                <li>
+                    <h3>BidBeavers-Online Auction House</h3>
+                    <p>In Case Of Any Query | Feel free to Ask Anything </p>
+                    <div class="bann-btn">
+                        <a href="/contact/" class="hvr-shutter-out-horizontal">Contact US</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
 </div>
 
 <!--banner strip end here-->
-<div  class="banner-strip bg-light text-dark" >
+<div class="banner-strip bg-light text-dark">
 
 </div>
 <!--services start here-->
 
-			<div class="services-bottom">
+<div class="services-bottom">
 
-				<div class="row">
+    <div class="row">
 
-                    {% for item in prod %}
-                      {%   if forloop.counter  < 7  %}
-					  <div class="col-sm-3 col-xs-3  col-2 col-md-2 ser">
-					<div class="thumbnail">
-                        <a >
-                            <img src="{{item.image.url}}" alt="..." class="img-thumbnail"></a>
-					  <div class="caption">
-					    <a href="/detail_prod/{{item.slug}}/" ><h3>{{item.prod_title}}</h3></a>
-                          <p></p>
-                          <!--<p>{{item.prod_description}}</p>-->
-					  </div>
-					</div>
-					<bidbox>
-						<span class="price"><span class="auction-price current-bid" data-auction-id="2342" data-bid="900000000" data-status="running"><span class="current auction">Minimum Bid</span> <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>{{item.minbid}}</span></span></span>
-				 </bidbox>
+        {% for item in prod %}
+        {% if forloop.counter < 7 %}
+        <div class="col-sm-3 col-xs-3  col-2 col-md-2 ser">
+            <div class="thumbnail">
+                <a>
+                    <img src="{{item.image.url}}" alt="..." class="img-thumbnail"></a>
+                <div class="caption">
+                    <a href="/detail_prod/{{item.slug}}/"><h3>{{item.prod_title}}</h3></a>
+                    <p></p>
+                    <!--<p>{{item.prod_description}}</p>-->
+                </div>
+            </div>
+            <bidbox>
+                <span class="price"><span class="auction-price current-bid" data-auction-id="2342" data-bid="900000000"
+                                          data-status="running"><span class="current auction">Minimum Bid</span> <span
+                        class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>{{item.minbid}}</span></span></span>
+            </bidbox>
 
-					  </div>
-                        {% endif %}
-                    {% endfor %}
-			</div>
-		</div>
+        </div>
+        {% endif %}
+        {% endfor %}
+    </div>
+</div>
 
 
 <!--
@@ -379,27 +417,18 @@ h1{
 </div>
 
 
-
-
-
-
-
-
 <div class="purchase">
-	<div class="container">
-		<div class="purchase-main">
-			<div class="purchase-left">
-				<h3>Best products from all over the world</h3>
-					</div>
-			<div class="purchase-right">
-				<a href="product_list/" class="hvr-shutter-out-horizontal">See More</a>
-			</div>
-		</div>
-	</div>
+    <div class="container">
+        <div class="purchase-main">
+            <div class="purchase-left">
+                <h3>Best products from all over the world</h3>
+            </div>
+            <div class="purchase-right">
+                <a href="product_list/" class="hvr-shutter-out-horizontal">See More</a>
+            </div>
+        </div>
+    </div>
 </div>
-
-
-
 
 
 <!--features end here-->
@@ -410,55 +439,46 @@ h1{
 <link rel="stylesheet" type="text/css" href="{%static 'web/css/magnific-popup.css' %}">
 
 <div class="project">
-	<div class="container">
-		<div class="project-main">
-			<div class="project-top">
-				<h3>Ongoing Auctions <i class="fas fa-bullhorn"></i></h3>
+    <div class="container">
+        <div class="project-main">
+            <div class="project-top">
+                <h3>Ongoing Auctions <i class="fas fa-bullhorn"></i></h3>
                 <h5>Products</h5>
-			</div>
-			<div class="project-bottom      ">
-                 {% for item in prod1 %}
-                  {%   if forloop.counter  < 5  %}
+            </div>
+            <div class="project-bottom      ">
+                {% for item in prod1 %}
+                {% if forloop.counter < 5 %}
 
-				<div class="col-md-3 project-grid">
-						<div class="project-eff">
-						<div id="nivo-lightbox-demo"> <p> <a href="{{item.image.url}}" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"> <span class="rollover1"> </span></a> </p></div>
-									  	<img class="img-responsive" src="{{item.image.url}}" alt="">
-							  </div>
-                   		<div class="project-details">
-							<h4>{{item.prod_title}}</h4>
-							<p>{{item.prod_description}}</p>
-						</div>
-						<bidbox>
-							<span class="price"><span class="auction-price current-bid" data-auction-id="2342" data-bid="900000000" data-status="running">
-                                <span class="current auction">Minimum Bid :</span> <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>{{item.prod_price}}</span></span></span>
-					 </bidbox>
+                <div class="col-md-3 project-grid">
+                    <div class="project-eff">
+                        <a href="{{item.image.url}}" data-lightbox-gallery="gallery1"
+                           id="nivo-lightbox-demo"></a>
+                        <img class="img-responsive" src="{{item.image.url}}" alt="">
+                    </div>
+                    <div class="project-details">
+                        <h4>{{item.prod_title}}</h4>
+                        <p>{{item.prod_description}}</p>
+                    </div>
+                    <bidbox>
+							<span class="price"><span class="auction-price current-bid" data-auction-id="2342"
+                                                      data-bid="900000000" data-status="running">
+                                <span class="current auction">Minimum Bid :</span> <span
+                                    class="woocommerce-Price-amount amount"><span
+                                    class="woocommerce-Price-currencySymbol">$</span>{{item.prod_price}}</span></span></span>
+                    </bidbox>
 
-					 <p id="demo6"></p>
-					</div>
+                    <p id="demo6"></p>
+                </div>
 
                 {% endif %}
-            {% endfor %}
+                {% endfor %}
 
 
-
-
-
-
-			<div class="clearfix"> </div>
-			</div>
-		</div>
-	</div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
 </div>
-
-
-
-
-
-
-
-
-
 
 
 <!--project end here-->
@@ -467,10 +487,7 @@ h1{
 <!-- FlexSlider -->
 
 
-
-
-
-			<!-- FlexSlider -->
+<!-- FlexSlider -->
 <!--clients end here-->
 <!--purchase start here-->
 
@@ -523,40 +540,38 @@ h1{
 		</div>
 	</div>-->
 <!--footer start here-->
-<div class="footer">
-	<div class="container">
-		<div class="footer-main">
+<!--<div class="footer">-->
+<!--    <div class="container">-->
+<!--        <div class="footer-main">-->
 
-			<div class="col-md-2 footer-grid">
-				<h3>Categories <i class="fa fa-list-alt" aria-hidden="true"></i></h3>
-				<ul>{% for item in unique %}
-					<li><a href="/cat/{{ item }}/">{{item}}</a></li>
-					{% endfor %}
-				</ul>
-			</div>
-		</div>
-	</div>
+<!--            <div class="col-md-2 footer-grid">-->
+<!--                <h3>Categories <i class="fa fa-list-alt" aria-hidden="true"></i></h3>-->
+<!--                <ul>{% for item in unique %}-->
+<!--                    <li><a href="/cat/{{ item }}/">{{item}}</a></li>-->
+<!--                    {% endfor %}-->
+<!--                </ul>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
 
-	<div class="copyright">
-	<div class="container">
-		<div class="copy-main">
-			<span>Developed By: UOG_SKT_Developers<i class="fab fa-dev"></i>
-			<div class="copy-right"> 
-				<ul>
-					<li><a class="active" href="/">Home</a></li>/
-					<li><a href="about/">About</a></li>/
-			
-					<li><a href="contact/">Contact</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-</div>
-</div>
-</div>
+<!--    <div class="copyright">-->
+<!--        <div class="container">-->
+<!--            <div class="copy-main">-->
+<!--			<span>Developed By: UOG_SKT_Developers<i class="fab fa-dev"></i>-->
+<!--			<div class="copy-right"> -->
+<!--				<ul>-->
+<!--					<li><a class="active" href="/">Home</a></li>/-->
+<!--					<li><a href="about/">About</a></li>/-->
+<!--			-->
+<!--					<li><a href="contact/">Contact</a></li>-->
+<!--				</ul>-->
+<!--			</div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+<!--</div>-->
 <!--footer end here-->
-
-
 
 
 </body>
